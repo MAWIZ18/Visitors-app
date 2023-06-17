@@ -1,7 +1,7 @@
 <?php
 include 'connection.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') { 
     // Retrieve form data
     $fname = $_POST['fname'];
     $password = $_POST['password'];
@@ -35,7 +35,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
