@@ -40,9 +40,9 @@ h2:hover{
     
 }
 
-.main-div-div{
+/* .main-div-div{
     
-}
+} */
 
 nav .text{
     position: relative;
@@ -56,9 +56,9 @@ h1{
     text-transform: uppercase;
     margin: 30px 0 0 20px;
 }
-.navigation{
+/* .navigation{
  
-}
+} */
 .nav-items{
    list-style: none;
 
@@ -88,33 +88,39 @@ h1{
     animation: animate 4s steps(12) infinite;
 
 }
-@keyframes animate{
+/* @keyframes animate{
     40%, 60%{
         left: 100%;
     }
     100%{
         left: 0%;
     }
-}
+} */
 
 .second-first-div{
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%,-50%);
-      
+/* margin-left: 260px;  */
+margin-top: 160px;
+text-align: center;
+   
 }
-.span-2{
+.span-2 {
     color: rgb(197, 205, 200);
     text-transform: uppercase;
     font-family: Arial;
     padding-bottom: 1000px;
 }
+.span-2 h1 {
+    font-size: 48pt;
+
+}
+
 p{
-    font-weight: 800;
-    font-size: 45px;
+  
+    font-size: 24px;
     color: #fff;
     margin-top: 5px;
+    text-align: center;
+   
 }
 
 .second-second-div{
@@ -172,7 +178,7 @@ h4{
     align-items: center;
     max-width: 100%;
 }
-button{
+/* button{
     width: 150px;
     height: 30px;
     margin-top: 30px;
@@ -180,31 +186,63 @@ button{
     background-color: transparent;
     color: #fff;
     border-radius: 10px;
-}
-.a{
+} */
+
+/* .a{
    font-size: 18px;
    font-weight: 200;
    padding: 10px;
    margin-top: 25px;
-}
-.logic{
-    padding-top: 35px;  
-    transition: all linear;
-    font-size: 22px;
+   width: 30px;
+} */
+/* .logic{
+    /* padding-top: 35px;   */
+    /* transition: all linear; */
+    /* font-size: 22px;
     text-decoration: none;
     color:#ffb940;
-  }
+    background-color:transparent ;
+    border-radius: 10px;
+    width: 300px;
+    height: 20px;
+    border: solid 0.1px;
+
+  }  */
 .logic:hover{
     text-decoration: underline;
 }
 .sep{
     display: flex;
     align-items: center;
-    justify-content: center;
+    
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 500px;
 }
+
+.sep button{
+    height: 40px;
+    width: 150px;
+    margin-right: 20px;
+    background-color: #ffb940;
+    border: none;
+    border-radius: 30px;
+}
+
+.sep h4 a{
+    height: 40px;
+    width: 150px;
+    
+}
+
+
 .su{
-    color: #fff;
+    color: #ffff;
+    font-size: 14pt;
+    font-weight: 500;
     text-decoration: none;
+ 
+   
 }
 
 /*****8
