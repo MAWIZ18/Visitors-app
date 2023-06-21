@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
-    <div class="mainhome-div">
+    <div class="main-div">
 
  <nav>
   
@@ -31,7 +31,7 @@
  <span class="span-2"> 
         <h1>Take attendance  </h1> </span>
 
-        <p> hello professors <br>
+        <p> hello professors 
         let's help you track who came to class today
          <!-- We help simplify
             <span class="m">Registration</span> of <span class="m">
