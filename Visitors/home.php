@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/all.css">
     <!-- <link rel="stylesheet" href="navi.css"> -->
-
+    <style>
+body{
+    background-color:#0077b6 ;
+}
+    </style>
 </head>
     <?php include ('navi.php');?>
 <body>
@@ -33,7 +37,7 @@
         
         <button type="submit"><a href="signup.php" class="su">
             SignUp</a></button>
-            <button type="submit"><a href="signup.php" class="su">
+            <button type="submit"><a href="login.php" class="su">
                 Login</a></button>
             
            
