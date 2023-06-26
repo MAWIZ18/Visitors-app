@@ -1,11 +1,9 @@
 <?php
-$connection = new mysqli('localhost','root','','visitors');
+$connect = new mysqli('localhost','root','','attendance');
 
-if($connection){
+if($connect){
     echo"connection sucessful";
 }else{
-    die(mysqli_error($connection));
+    die(mysqli_error($connect));
 }
-
-
 ?>
