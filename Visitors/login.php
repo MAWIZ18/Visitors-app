@@ -1,13 +1,13 @@
 <?php
 include 'connection.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') { 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve form data
     $fname = $_POST['fname'];
     $password = $_POST['password'];
 
     // Prepare the SQL statement with placeholders
-    $sql = "SELECT * FROM users WHERE fname=? AND password=?";
+    $sql = "SELECT * FROM `users` WHERE fname=? AND password=?";
     $statement = mysqli_prepare($connection, $sql);
     
     if ($statement) {
@@ -36,6 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,12 +48,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <div class="main-div">
-        <p>Welcome to My Attendance's app,<br>Sign in to Continue.</p><br><br>
+       <centre> <h2>LOGIN</h2><br><br></centre>
+   
         <form method="POST">
             <label>Name<br><input type="text" name="fname"></label><br><br>
             <label>Password<br><input type="password" name="password"></label><br><br>
             <a href="recoveryPage.html" class="center">Forgot Password?</a><br><br>
-            <button type="submit" class="sign-in">Sign in</button>
+            <button type="submit" class="sign-in">Login</button><br><hr><br><br><br>
+
+            <p>Don't have an account yet?<a class="w3-btn" href="signup.php">Sign up</a> </p>
+<!-- <div class = "para">Don't have account<button type="submit" class="">Sign up</button> -->
+            </div
         </form>
     </div>
 </body>
