@@ -9,23 +9,13 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/all.css">
+    <!-- <link rel="stylesheet" href="navi.css"> -->
+
 </head>
+    <?php include ('navi.php');?>
 <body>
-    <div class="main-div">
+    
 
- <nav>
-  
- <h1> <i class="fa-solid fa-id-card"></i>My <span class="text second-text"> Visitor's App. </span></h1>
- 
- </nav>
-
- <div class="navigation">
-         
-  <h2>About Us</h2>
-  
- </div>
-
-    </div>
      <div class="second-first-div">
     
  <span class="span-2"> 

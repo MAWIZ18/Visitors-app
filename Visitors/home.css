@@ -12,8 +12,8 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(images.jpeg);
-    background: #1b1b1b;
+    
+    background: #0077b6;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,11 +22,12 @@ body{
     overflow: hidden;
     position: relative;    
 }
-.main-div{
+
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} 
 h2{
     
     color: #ffb940;
@@ -44,10 +45,10 @@ h2:hover{
     
 } */
 
-nav .text{
+/* nav .text{
     position: relative;
     color: #ffb940;
-}
+} */
 
 
 h1{
@@ -59,7 +60,7 @@ h1{
 /* .navigation{
  
 } */
-.nav-items{
+/* .nav-items{
    list-style: none;
 
     
@@ -68,12 +69,12 @@ h1{
     border: 2px solid orange;
     text-decoration: dashed;
   
-}
-.fa-id-card{
+} */
+/* .fa-id-card{
     color:#ffb940;
     font-size: 58px;
     margin: 30px 20px 0 0;
-}
+} */
 
 .text.second-text:before{
   
@@ -83,7 +84,7 @@ h1{
     left: 0;
     height: 100%;
     width: 100%;
-    background-color:#1b1b1b;
+    background-color:#0077b6;
     border-left: 2px solid #ffb940;
     animation: animate 4s steps(12) infinite;
 
@@ -133,7 +134,7 @@ p{
     transform: translate(-50%, -50%);
 }
 
-ul {
+/* ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -143,9 +144,9 @@ ul {
 li{
     padding-top: 10px;
     margin-top: 10px;
-}    
+}     */
 
-.fa-brands{
+/* .fa-brands{
     color: #fff;
     font-size: 24px;  
 }
@@ -167,7 +168,7 @@ color: rgba(218, 29, 4, 0.973);
 }
 .fa-twitter:hover{
     color: #00acee;
-}
+} */
 h4{
     color: #fff;
     width: 100%;
@@ -175,12 +176,12 @@ h4{
 .m{
     color:#ffb940;
 }
-.third{
+/* .third{
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 100%;
-}
+} */
 /* button{
     width: 150px;
     height: 30px;
