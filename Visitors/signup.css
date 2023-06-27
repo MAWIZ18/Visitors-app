@@ -3,10 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Calibri;
-    font-size: 16px;
+    font-size: 20px;
 }
 body{
-    background-color: #b8b8b8;
+    background-color: #0077b6;
 }
 h1{
     margin: 10px;
@@ -19,7 +19,9 @@ h1{
 .main-div{
     align-items: center;
     margin: 30px;
+    margin-top: 5%;
     padding: 40px;
+    padding-bottom: 10%;
     background: whitesmoke;
     width: 50%;
     position: absolute;
@@ -27,9 +29,9 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: ;
     border-radius: 10px;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    height: 90%;
 }
 input{
     width: 150px;
