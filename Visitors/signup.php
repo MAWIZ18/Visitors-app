@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
     $confirmPassword = $_POST['confirmPassword'];
 
-    // Perform validation   
+    // Perform validation
     // Add your validation logic here
 
     // Check if passwords match
@@ -60,6 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //     header("location: signup.php");
 
     // }
+   
 }
 ?>
 
@@ -74,18 +75,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <div class="main-div">
-        <h1>Sign up</h1>
-        <p>Enter your details to create an account with my Visitor's app.</p><br>
+        <centre><h1>SIGN UP</h1><centre>
+    <p>Enter your details to create an account with my Visitor's app.</p><br>
 
         <div class="form">
             <form method="POST">
                 <div class="first-div">
                     <div class="first-first-div">
-                        <label>First Name*</label><br>
+                        <label>First Name<span class="bg">*</span></label><br>
                         <input type="text" name="firstName"><br><br>
                     </div>
                     <div class="first-second-div">
-                        <label>Last Name*</label><br>
+                        <label>Last Name<span class="bg">*</span></label><br>
                         <input type="text" name="lastName"><br><br>
                     </div>
                 </div>
@@ -93,26 +94,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label>Email<span class="bg">*</span> <br>
                     <input type="email" name="email" class="email">
                 </label><br><br>
-                <label>Phone Number* <br>
+                <label>Phone Number<span class="bg">*</span> <br>
                     <input type="tel" name="phoneNumber" class="number" required>
                 </label><br><br>
-                <label>Department*<br>
+                <label>Department<span class="bg">*</span><br>
                     <input type="text" name="department" class="department">
                 </label><br><br>
                 <div class="second">
                     <div class="second-first">
-                        <label> Password*<br>
+                        <label> Password<span class="bg">*</span><br>
                             <input type="password" name="password" required>
                         </label><br><br>
                     </div>
                     <div class="second-second">
-                        <label> Confirm Password*<br>
+                        <label> Confirm Password<span class="bg">*</span><br>
                             <input type="password" name="confirmPassword" required>
                         </label><br><br>
+                        <button type="submit"><a href="login.php">Sign Up</a></button>
                     </div>
                 </div>
 
-                <button type="submit">>Sign Up</a></button>
+                <button type="submit"><a href="login.php">Sign Up</a></button>
             </form>
         </div>
     </div>
