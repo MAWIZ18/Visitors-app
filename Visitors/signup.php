@@ -25,12 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Insert data into the database
     $sql = "INSERT INTO  teachers_data (fname, lname, email, contact, department, password) 
             VALUES ('$firstName', '$lastName', '$email', '$phoneNumber', '$department', '$password')"; 
-    //         "ALTER TABLE demo
-    // ADD '$firstName' varchar(50)";
-    //create a new column for the lecture's course units
-
-    // $query="ALTER TABLE demo
-    // ADD '$firstName' varchar(50)";
+   
     // Execute the queries
     if (mysqli_query($connect, $sql)) {
 
