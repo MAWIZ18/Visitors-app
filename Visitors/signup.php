@@ -24,19 +24,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Insert data into the database
-    $sql = "INSERT INTO `users` (fname, lname, email, contact, department, password) 
-            VALUES ('$firstName', '$lastName', '$email', '$phoneNumber', '$department', '$password')";
-    
-    // Execute the query
-    if (mysqli_query($connection, $sql)) {
+    $sql = "INSERT INTO  teachers_data (fname, lname, email, contact, department, password) 
+            VALUES ('$firstName', '$lastName', '$email', '$phoneNumber', '$department', '$password')"; 
+    //         "ALTER TABLE demo
+    // ADD '$firstName' varchar(50)";
+    //create a new column for the lecture's course units
+
+    // $query="ALTER TABLE demo
+    // ADD '$firstName' varchar(50)";
+    // Execute the queries
+    if (mysqli_query($connect, $sql)) {
+
+        $query= "ALTER TABLE demo ADD  $firstName varchar(20)";
+
+       
+        if(mysqli_query($connect,$query)) {
+           
+            echo"collumn added succesfuly";
+
+        }
+        else{
+            echo "failed to add";
+        }
         // Redirect to a welcome page or display a success message
-        header("Location: welcomepage.html");
+        header("Location: checkbox.php");
+       
         exit;
     } else {
         // Handle database insertion error
-        echo "Error: " . mysqli_error($connection);
+        echo "Error: " . mysqli_error($connect);
         exit;
     }
+    // if(mysqli_query($connect,$query)){
+    //     //show that the column have been creaated successfuly
+    //     echo "column created";
+    //     header("location: signup.php");
+
+    // }
    
 }
 ?>
@@ -90,8 +114,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         
                     </div>
                 </div>
+
+
                 <button type="submit"><a href="login.php">Sign Up</a></button>
-                
+
             </form>
         </div>
     </div>
