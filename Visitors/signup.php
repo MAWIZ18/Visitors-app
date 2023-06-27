@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="main-div">
         <centre><h1>SIGN UP</h1><centre>
-    <p>Enter your details to create an account with my Visitor's app.</p><br>
+   
 
         <div class="form">
             <form method="POST">
