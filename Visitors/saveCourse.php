@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('connection.php');
-
+$firstName = $_POST['firstName'];
 
 if(isset($_POST['save'])){
 
@@ -11,7 +11,7 @@ if(isset($_POST['save'])){
 
         // echo $courseItems."<br>"; 
 
-        $query="INSERT INTO demo (name) VALUES('$courseItems')";
+        $query="INSERT INTO demo ($firstName) VALUES('$courseItems')";
         $run=mysqli_query($connect,$query); }
     if($run){
 

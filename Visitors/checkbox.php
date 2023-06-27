@@ -24,7 +24,7 @@ session_start();
         </div>
         <div class="courses">
             <form action="saveCourse.php" method="POST">
-                 
+                <label for="firstName">confirm your email</label><input type="text" name="firstName"> <br>
            
             <?php
           include('connection.php');
