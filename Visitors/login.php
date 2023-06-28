@@ -1,5 +1,6 @@
 <?php
 include 'connection.php';
+include 'navi.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve form data
@@ -37,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,6 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Login</title>
     <link rel="stylesheet" href="login2.css">
 </head>
+    
 <body>
     <div class="main-div">
        <centre> <h2>LOGIN</h2><br><br></centre>

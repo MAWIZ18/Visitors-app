@@ -1,5 +1,6 @@
 <?php
 include 'connection.php';
+include 'navi.php';
 
 // Check if the form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -71,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="main-div">
         <centre><h1>SIGN UP</h1><centre>
-    <p>Enter your details to create an account with my Visitor's app.</p><br>
+   
 
         <div class="form">
             <form method="POST">
@@ -105,11 +106,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <label> Confirm Password<span class="bg">*</span><br>
                             <input type="password" name="confirmPassword" required>
                         </label><br><br>
-                        <button type="submit"><a href="login.php">Sign Up</a></button>
+                        
                     </div>
                 </div>
 
+
                 <button type="submit"><a href="login.php">Sign Up</a></button>
+
             </form>
         </div>
     </div>
