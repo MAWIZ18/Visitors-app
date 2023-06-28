@@ -6,6 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkbox.css">
     <title>Document</title>
 </head>
 <body>
@@ -20,11 +21,11 @@ session_start();
         ?>
 
         <div class="header">
-        <h1>select the course unit please</h1>
+        <h1>select the course unit </h1>
         </div>
         <div class="courses">
             <form action="saveCourse.php" method="POST">
-                <label for="firstName">confirm your email</label><input type="text" name="firstName"> <br>
+               <div class="name"><label for="firstName"> your first name please</label><input type="text" name="firstName"> <br></div> 
            
             <?php
           include('connection.php');
@@ -35,7 +36,7 @@ session_start();
 
                 foreach( $query_run as $courseUnit){
                      ?> 
-                      <input type="checkbox" name="courseList[]" value= " <?= $courseUnit['courseName']; ?>"/> <?= $courseUnit['courseName']; ?> <br>
+                     <div class="check"> <input  type="checkbox" name="courseList[]" value= " <?= $courseUnit['courseName']; ?>"/> <?= $courseUnit['courseName']; ?> </div> <br>
                      <?php
                 }
 

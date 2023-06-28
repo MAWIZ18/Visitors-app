@@ -16,7 +16,7 @@ if(isset($_POST['save'])){
     if($run){
 
         $_SESSION['status']="inserted successfuly";
-        header("location: checkbox.php");
+        header("location: dashboard.php");
     }
     else{
         $_SESSION['status']="not inserted successfuly";

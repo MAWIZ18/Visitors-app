@@ -26,10 +26,10 @@ nav{
 nav ul li a{
     color: black;
 }
-nav:hover{
+/* nav:hover{
     width: 280px;
     transition: 1s;
-}
+} */
 .logo{
     text-align: center;
     display: flex;
@@ -174,7 +174,7 @@ a:hover i{
  table thead tr{
 
     color:#fff;
-    background: #34af6d;
+    background: #0077b6;
     text-align: left;
     font-weight: bold;
    
