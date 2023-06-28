@@ -85,7 +85,7 @@
                                     
                                 <?php
                 include 'connection.php';
-                $sql =" select * from students_data";
+                $sql ="select * from `demo` where";
                 $query= mysqli_query ($connect,$sql);
                 if($query){
                   while($row=mysqli_fetch_assoc($query)){
@@ -101,18 +101,13 @@
                     <td> '.$reg_number.'</td>
                     <td> '.$contact.'</td>
                     <td> '.$date.'</td>
-                    
-                    
-                 
-                    
+
                 </tr>';
                   
                   }
                   
 
                 }
-                
-                
                 ?>
                                     
                                 </tbody>

@@ -7,8 +7,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'];
 
     // Prepare the SQL statement with placeholders
-    $sql = "SELECT * FROM `users` WHERE fname=? AND password=?";
-    $statement = mysqli_prepare($connection, $sql);
+    $sql = "SELECT * FROM `teachers_data` WHERE fname=? AND password=?";
+    $statement = mysqli_prepare($connect, $sql);
     
     if ($statement) {
         // Bind the parameters to the placeholders
@@ -23,7 +23,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (mysqli_num_rows($result) > 0) {
             // Authentication successful
             $users = mysqli_fetch_assoc($result);
-            header("Location: view.html");
+            
+            header("Location: dashboard.php");
             exit;
         } else {
             // Authentication failed
@@ -31,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     } else {
         // Error preparing the statement
-        echo "Error: " . mysqli_error($connection);
+        echo "Error: " . mysqli_error($connect);
     }
 }
 ?>
