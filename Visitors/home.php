@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/all.css">
     <!-- <link rel="stylesheet" href="navi.css"> -->
+    
     <style>
 body{
     background-color:#0077b6 ;

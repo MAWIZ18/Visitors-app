@@ -32,9 +32,9 @@
         
           <div class="navbar-menu" id="navbarMenu">
           
-          <div><a href="#">Home</a></div>
-          <div><a href="#">About us</a></div>
-          <div><a href="#">Dashboard</a></div>
+          <div><a href="home.php">Home</a></div>
+          <div><a href="about,html">About us</a></div>
+          <div><a href="dashboard.php">Dashboard</a></div>
         </div>
       </div>
         <!-- Dropdown Menu -->
