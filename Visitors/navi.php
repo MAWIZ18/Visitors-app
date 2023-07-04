@@ -33,7 +33,7 @@
           <div class="navbar-menu" id="navbarMenu">
           
           <div><a href="home.php">Home</a></div>
-          <div><a href="about,html">About us</a></div>
+          <div><a href="about.html">About us</a></div>
           <div><a href="dashboard.php">Dashboard</a></div>
         </div>
       </div>

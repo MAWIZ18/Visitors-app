@@ -51,13 +51,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
 <body>
     <div class="main-div">
-       <centre> <h2>LOGIN</h2><br><br></centre>
+       <centre> <h1>LOGIN</h1></centre>
    
         <form method="POST">
             <label>Name<br><input type="text" name="fname"></label><br><br>
             <label>Password<br><input type="password" name="password"></label><br><br>
             <a href="recoveryPage.html" class="center">Forgot Password?</a><br><br>
-            <button type="submit" class="sign-in">Login</button><br><hr><br><br><br>
+            <button type="submit" class="sign-in">Login</button><br><hr><br>
 
             <p>Don't have an account yet?<a class="w3-btn" href="signup.php">Sign up</a> </p>
 <!-- <div class = "para">Don't have account<button type="submit" class="">Sign up</button> -->

@@ -19,27 +19,28 @@ h1{
 .main-div{
     align-items: center;
     margin: 30px;
-    margin-top: 5%;
+    margin-top: 5%;;
     padding: 40px;
-    padding-bottom: 10%;
+    padding-bottom: 20%;
     background: whitesmoke;
-    width: 50%;
+   
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 40px;
     border-radius: 10px;
     box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
-    height: 90%;
+    height: 93%;
+    width:40%
 }
 input{
-    width: 150px;
+    width: 200px;
     border: 1px solid;
     outline: none;
-    padding: 3px;
-    margin: 3px;
-    border-radius: 5px;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 6px;
 }
 
 p{
@@ -84,7 +85,7 @@ button{
     margin: auto;
     justify-content: center;
     background: #000;
-    width: 50%;
+    width: 40%;
     border-radius: 5px;
     border: none;
     height: 1.6em;

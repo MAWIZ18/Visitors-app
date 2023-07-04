@@ -9,6 +9,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="dasboard.css">
 </head>
+<?php include ('navi.php');?>
 <body>
     <div class="container">
         <nav>
