@@ -12,16 +12,26 @@ body{
 
 form{
     align-items: center;
+<<<<<<< HEAD
      padding: 40px;
     width: 50%;
     margin: 0 auto;
+=======
+    margin: 30px;
+    margin-top: 5%;;
+    padding: 40px;
+    padding-bottom: 20%;
+    background: whitesmoke;
+   
+>>>>>>> ae0aec202798486c5f15fd3158255c3a37c75aac
     position: absolute;
     margin-top: 20px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 40px;
     border-radius: 10px;
+<<<<<<< HEAD
     box-shadow: 10px 10px 15px rgba(0,0,0,0.2.5);
     background-color: whitesmoke;
       
@@ -33,6 +43,19 @@ input{
     padding: 1px;
     margin-bottom: 20px;
    
+=======
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    height: 93%;
+    width:40%
+}
+input{
+    width: 200px;
+    border: 1px solid;
+    outline: none;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 6px;
+>>>>>>> ae0aec202798486c5f15fd3158255c3a37c75aac
 }
 
 .first{
@@ -68,7 +91,26 @@ form {
     top: 60%;
 }
 button{
+<<<<<<< HEAD
     margin-top: 1em;
+=======
+    display: flex;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    background: #000;
+    width: 40%;
+    border-radius: 5px;
+    border: none;
+    height: 1.6em;
+    align-items: center;
+    font-weight: 500;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+>>>>>>> ae0aec202798486c5f15fd3158255c3a37c75aac
 }
 input{
     width: 300px;

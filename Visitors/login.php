@@ -53,6 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
     
 <body>
+<<<<<<< HEAD
 <div class="main-div">
 
 
@@ -66,6 +67,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </div>
 
+=======
+    <div class="main-div">
+       <centre> <h1>LOGIN</h1></centre>
+   
+        <form method="POST">
+            <label>Name<br><input type="text" name="fname"></label><br><br>
+            <label>Password<br><input type="password" name="password"></label><br><br>
+            <a href="recoveryPage.html" class="center">Forgot Password?</a><br><br>
+            <button type="submit" class="sign-in">Login</button><br><hr><br>
+>>>>>>> ae0aec202798486c5f15fd3158255c3a37c75aac
 
 </body>
 </html>
