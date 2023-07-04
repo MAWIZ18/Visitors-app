@@ -1,5 +1,5 @@
 <?php
-include 'connection.php';
+
 include 'navi.php';
 
 // Check if the form is submitted
@@ -68,53 +68,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp Page</title>
     <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main-div">
-        <centre><h1>SIGN UP</h1><centre>
+
+
+
+
    
-
-        <div class="form">
-            <form method="POST">
-                <div class="first-div">
-                    <div class="first-first-div">
-                        <label>First Name<span class="bg">*</span></label><br>
-                        <input type="text" name="firstName"><br><br>
-                    </div>
-                    <div class="first-second-div">
-                        <label>Last Name<span class="bg">*</span></label><br>
-                        <input type="text" name="lastName"><br><br>
-                    </div>
-                </div>
-
-                <label>Email<span class="bg">*</span> <br>
-                    <input type="email" name="email" class="email">
-                </label><br><br>
-                <label>Phone Number<span class="bg">*</span> <br>
-                    <input type="tel" name="phoneNumber" class="number" required>
-                </label><br><br>
-                <label>Department<span class="bg">*</span><br>
-                    <input type="text" name="department" class="department">
-                </label><br><br>
-                <div class="second">
-                    <div class="second-first">
-                        <label> Password<span class="bg">*</span><br>
-                            <input type="password" name="password" required>
-                        </label><br><br>
-                    </div>
-                    <div class="second-second">
-                        <label> Confirm Password<span class="bg">*</span><br>
-                            <input type="password" name="confirmPassword" required>
-                        </label><br><br>
-                        
-                    </div>
-                </div>
-
-
-                <button type="submit"><a href="login.php">Sign Up</a></button>
-
-            </form>
-        </div>
+<form method="POST">
+<center><h2>Sign UP</h2></center>
+<div class="first-div">
+    <div class="flex-div">
+    <label>First Name<span class="bg">*</span></label><input type="text" class="first">
     </div>
+    <div class="flex-div">
+    <label>Last Name<span class="bg">*</span></label><input type="text" class="first">
+    </div>
+</div>
+<label>Email<span class="bg">*</span></label><br><input type="email"><br>
+<label>Phone Number<span class="bg">*</span></label><br><input type="tel">
+<label>Department<span class="bg">*</span></label><input type="text">
+<div class="second-div">
+    <div class="flex-div ace">
+    <label>Password<span class="bg">*</span></label><input type="text" class="first">
+    </div>
+    <div class="flex-div ace">
+    <label>Confirm Password<span class="bg">*</span></label><input type="text" class="first">
+    </div>
+</div>
+<center><button type="submit">Sign Up</button><br><br><p class="first-p">Already have,
+    an account. <a href="login.php">Login</a>
+</p></center>
+</form>
+
 </body>
 </html>

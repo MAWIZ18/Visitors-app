@@ -17,12 +17,13 @@ nav{
     height: 100vh;
     left: 0;
     width: 90px;
-    /* width: 280px; */
+     width: 280px;
     background:#fff;
     overflow: hidden;
     transition: 1s;
     
 }
+
 nav ul li a{
     color: black;
 }
@@ -37,15 +38,17 @@ nav ul li a{
     padding-bottom: 3rem
 }
 .logo span{
+    position: relative;
+    top: 28px;
     font-weight: bold;
     padding-left: 15px;
     font-size: 18px;
     text-transform: uppercase;
 }
 .logo img{
-    width:45px;
-    height: 45px;
-    border-radius: 50%;
+    width:100px;
+    height: 90px;
+    
 }
 
 a{
@@ -66,7 +69,7 @@ nav .fas{
 }
 .nav-item{
     position: relative;
-    top: 12px;
+    top: 9px;
     margin-left: 10px;
 }
 

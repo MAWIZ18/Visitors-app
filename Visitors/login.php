@@ -47,22 +47,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
     
 <body>
-    <div class="main-div">
-       <centre> <h2>LOGIN</h2><br><br></centre>
-   
-        <form method="POST">
-            <label>Name<br><input type="text" name="fname"></label><br><br>
-            <label>Password<br><input type="password" name="password"></label><br><br>
-            <a href="recoveryPage.html" class="center">Forgot Password?</a><br><br>
-            <button type="submit" class="sign-in">Login</button><br><hr><br><br><br>
+<div class="main-div">
 
-            <p>Don't have an account yet?<a class="w3-btn" href="signup.php">Sign up</a> </p>
-<!-- <div class = "para">Don't have account<button type="submit" class="">Sign up</button> -->
-            </div
-        </form>
-    </div>
+
+<form method="POST">
+<centre> <h2>LOGIN</h2><br><br></centre>
+<label>Name<br><input type="text" name="fname"></label><br><br>
+<label>Password<br><input type="password" name="password"></label><br><br>
+<center><a href="recoveryPage.html" class="center">Forgot Password?</a></center><br><center><button type="submit" class="sign-in">Login</button></center><br><hr><br><br>
+
+<p>Don't have an account yet?<a class="w3-btn" href="signup.php"> Sign up</a> </p>
+
+</div>
+
+
 </body>
 </html>
