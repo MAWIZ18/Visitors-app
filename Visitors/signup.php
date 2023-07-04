@@ -79,18 +79,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
    
 <form method="POST">
-<center><h2>Sign UP</h2></center>
+
+
+
 <div class="first-div">
+
     <div class="flex-div">
-    <label>First Name<span class="bg">*</span></label><input type="text" class="first">
+    <label>First Name<span class="bg">*</span></label><input type="text">
     </div>
     <div class="flex-div">
-    <label>Last Name<span class="bg">*</span></label><input type="text" class="first">
+    <label>Last Name<span class="bg">*</span></label><input type="text">
     </div>
 </div>
-<label>Email<span class="bg">*</span></label><br><input type="email"><br>
-<label>Phone Number<span class="bg">*</span></label><br><input type="tel">
-<label>Department<span class="bg">*</span></label><input type="text">
+<label>Email<span class="bg">*</span></label><br><input type="email" class="side"><br>
+<label>Phone Number<span class="bg">*</span></label><br><input type="tel" class="side">
+<label>Department<span class="bg">*</span></label><input type="text" class="side">
 <div class="second-div">
     <div class="flex-div ace">
     <label>Password<span class="bg">*</span></label><input type="text" class="first">

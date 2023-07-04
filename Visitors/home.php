@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
+
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,
@@ -14,7 +14,6 @@ initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-=======
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,
@@ -25,12 +24,8 @@ initial-scale=1.0">
     <link rel="stylesheet" href="css/all.css">
     <!-- <link rel="stylesheet" href="navi.css"> -->
     
-    <style>
-body{
-    background-color:#0077b6 ;
-}
-    </style>
->>>>>>> ae0aec202798486c5f15fd3158255c3a37c75aac
+   
+
 </head>
 
 <body>

@@ -1,5 +1,4 @@
 <?php
-include 'connection.php';
 include 'navi.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -53,30 +52,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
     
 <body>
-<<<<<<< HEAD
-<div class="main-div">
+
+
 
 
 <form method="POST">
-<centre> <h2>LOGIN</h2><br><br></centre>
-<label>Name<br><input type="text" name="fname"></label><br><br>
-<label>Password<br><input type="password" name="password"></label><br><br>
-<center><a href="recoveryPage.html" class="center">Forgot Password?</a></center><br><center><button type="submit" class="sign-in">Login</button></center><br><hr><br><br>
+
+ <h1><center>LOGIN</center></h1><br><br>
+<label>Name<br><input type="text"></label><br><br>
+<label>Password<br><input type="password"></label><br><br>
+<center><a href="recoveryPage.html" class="center">
+    Forgot Password?</a></center><br><center><button type="submit"
+     class="sign-in">Login</button></center><br><hr><br><br>
+
 
 <p>Don't have an account yet?<a class="w3-btn" href="signup.php"> Sign up</a> </p>
 
-</div>
+</form>
 
-=======
-    <div class="main-div">
-       <centre> <h1>LOGIN</h1></centre>
-   
-        <form method="POST">
-            <label>Name<br><input type="text" name="fname"></label><br><br>
-            <label>Password<br><input type="password" name="password"></label><br><br>
-            <a href="recoveryPage.html" class="center">Forgot Password?</a><br><br>
-            <button type="submit" class="sign-in">Login</button><br><hr><br>
->>>>>>> ae0aec202798486c5f15fd3158255c3a37c75aac
+
+    
+
 
 </body>
 </html>
