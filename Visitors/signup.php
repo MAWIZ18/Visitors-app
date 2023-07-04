@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
    
 <form method="POST">
-<center><h2>Sign UP</h2></center>
+<centre><h2>Sign UP</h2></centre>
 <div class="first-div">
     <div class="flex-div">
     <label>First Name<span class="bg">*</span></label><input type="text" class="first">
@@ -99,9 +99,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <label>Confirm Password<span class="bg">*</span></label><input type="text" class="first">
     </div>
 </div>
-<center><button type="submit">Sign Up</button><br><br><p class="first-p">Already have,
+<centre><button type="submit">Sign Up</button><br><br><p class="first-p">Already have,
     an account. <a href="login.php">Login</a>
-</p></center>
+</p></centre>
 </form>
 
 </body>
