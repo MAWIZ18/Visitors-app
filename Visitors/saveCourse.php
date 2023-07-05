@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('connection.php');
-$firstName = $_POST['firstName'];
+$firstName = $_POST['user_name'];
 
 if(isset($_POST['save'])){
 
@@ -11,12 +11,12 @@ if(isset($_POST['save'])){
 
         // echo $courseItems."<br>"; 
 
-        $query="INSERT INTO demo ($firstName) VALUES('$courseItems')";
+        $query="INSERT INTO courses (courseName,userName) VALUES('$courseItems','$firstName')";
         $run=mysqli_query($connect,$query); }
     if($run){
 
         $_SESSION['status']="inserted successfuly";
-        header("location: dashboard.php");
+        header("location: login.php");
     }
     else{
         $_SESSION['status']="not inserted successfuly";

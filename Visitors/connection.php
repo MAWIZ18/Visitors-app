@@ -1,5 +1,5 @@
 <?php
-$connect = new mysqli('localhost','root','','visitors');
+$connect = new mysqli('localhost','root','','attendance');
 
 // if($connect){
 //     echo"connection sucessful";

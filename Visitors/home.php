@@ -13,7 +13,11 @@
     <style>
 body{
     background-color:#0077b6 ;
+    margin-top:0pxl
+    
+    
 }
+
     </style>
 </head>
     <?php include ('navi.php');?>

@@ -7,6 +7,21 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="checkbox.css">
+    <style>
+        button{
+    width: 200px;
+    height: 30px;
+    background-color: #7f8284;
+    border:none;
+    border-radius:20px;
+    color:#fff;
+    font-size:20px;
+
+}
+.container{
+    border-radius:20px;
+}
+    </style>
     <title>Document</title>
 </head>
 <body>
@@ -25,7 +40,7 @@ session_start();
         </div>
         <div class="courses">
             <form action="saveCourse.php" method="POST">
-               <div class="name"><label for="firstName"> your first name please</label><input type="text" name="firstName"> <br></div> 
+               <div class="name"><label for="firstName"> first name</label><input type="text" name="user_name" required> <br></div> 
            
             <?php
           include('connection.php');
@@ -39,7 +54,7 @@ session_start();
                      <div class="check"> <input  type="checkbox" name="courseList[]" value= " <?= $courseUnit['courseName']; ?>"/> <?= $courseUnit['courseName']; ?> </div> <br>
                      <?php
                 }
-
+                
             }
             else{
                 echo "no record found";
