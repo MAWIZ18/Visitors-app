@@ -13,6 +13,20 @@
     <script src="https://kit.fontawesome.com/d2d527518d.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="dasboard.css">
+    <style>
+        
+ table thead tr{
+
+color:#fff;
+background: #0077b6;
+text-align: left;
+font-weight: bold;
+
+}
+nav{
+    width:280px;
+}
+    </style>
 </head>
 <?php include ('navi.php');?>
 <body>
@@ -70,7 +84,7 @@
         <section class="main">
             <div class="main-top">
                 <h1>Attendance</h1>
-                <i class="fas fa-user-cog"></i>
+                <div class="forme"><a href="registrationForm.php"> generate an attendance</a></div>
             </div>
             <section class="attendance">
                 <div class="attendance-list">
@@ -89,19 +103,22 @@
                                 <tbody>
                                     
                                 <?php
+                                session_start();
                 include 'connection.php';
-                $sql ="select * from `demo` where";
+                $users= $_GET['users']; $cou= $_GET['course'];
+                $sql ="select * from `students_data` where lecturer_name = '$users'";
+               
                 $query= mysqli_query ($connect,$sql);
-                if($query){
-                  while($row=mysqli_fetch_assoc($query)){
-                    $Id=$row['id'];
+                 if($query){
+                   while($row=mysqli_fetch_assoc($query)){
+                    $id=$row['id'];
                     $first_Name= $row['fName'];
                     $contact=$row['phoneContact'];
                     $reg_number= $row['registration_number'];
                     $date=$row['attendance_date'];
-                    
+                    // echo '<h2>'.$user.'</h2> ';
                     echo' <tr>
-                    <td>'.  $Id.'</td>
+                    <td>'.  $id.'</td>
                     <td> '. $first_Name.'</td>
                     <td> '.$reg_number.'</td>
                     <td> '.$contact.'</td>
@@ -112,7 +129,8 @@
                   }
                   
 
-                }
+                 }
+
                 ?>
                                     
                                 </tbody>
@@ -124,6 +142,6 @@
             
         
         </section>
-    </div>
+   
 </body>
 </html>

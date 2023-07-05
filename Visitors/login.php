@@ -1,9 +1,11 @@
 <?php
+include 'connection.php';
 include 'navi.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve form data
     $fname = $_POST['fname'];
+    
     $password = $_POST['password'];
 
     // Prepare the SQL statement with placeholders
@@ -23,8 +25,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (mysqli_num_rows($result) > 0) {
             // Authentication successful
             $users = mysqli_fetch_assoc($result);
+            $sql ="select courseName from `courses` where userName = '$fname'" ;
+   $query= mysqli_query ($connect,$sql);
+
+if (mysqli_num_rows($query) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($query)) {
+
+       $var= $row['courseName'];
+      
+     
+      echo  '<div> <a href="dashboard.php?users='.$fname.' & course='.$var. '">' . $row['courseName']. '</a> </div>';
+    }
             
-            header("Location: dashboard.php");
+           
             exit;
         } else {
             // Authentication failed
@@ -34,7 +48,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Error preparing the statement
         echo "Error: " . mysqli_error($connect);
     }
+
+    
 }
+}
+
 ?>
 
  
@@ -76,3 +94,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </body>
 </html>
+    

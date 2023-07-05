@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $department = $_POST['department'];
     $password = $_POST['password'];
     $confirmPassword = $_POST['confirmPassword'];
+    
 
     // Perform validation
     // Add your validation logic here
@@ -24,25 +25,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Insert data into the database
-    $sql = "INSERT INTO  teachers_data (fname, lname, email, contact, department, password) 
-            VALUES ('$firstName', '$lastName', '$email', '$phoneNumber', '$department', '$password')"; 
+    $sql = "INSERT INTO  teachers_data (id,fname, lname, email, contact, department, password) 
+            VALUES ('$id','$firstName', '$lastName', '$email', '$phoneNumber', '$department', '$password')"; 
    
     // Execute the queries
     if (mysqli_query($connect, $sql)) {
 
-        $query= "ALTER TABLE demo ADD  $firstName varchar(20)";
-
-       
-        if(mysqli_query($connect,$query)) {
-           
-            echo"collumn added succesfuly";
-
-        }
-        else{
-            echo "failed to add";
-        }
-        // Redirect to a welcome page or display a success message
-        header("Location: checkbox.php");
+        header("Location:checkbox.php");
        
         exit;
     } else {
@@ -50,12 +39,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Error: " . mysqli_error($connect);
         exit;
     }
-    // if(mysqli_query($connect,$query)){
-    //     //show that the column have been creaated successfuly
-    //     echo "column created";
-    //     header("location: signup.php");
-
-    // }
    
 }
 ?>

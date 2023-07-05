@@ -47,6 +47,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="loginForm.css">
+    <style>
+              button a{
+    width: 200px;
+    height: 30px;
+    background-color: #7f8284;
+    border:none;
+    border-radius:20px;
+    color:#fff;
+    font-size:20px;
+
+}
+    </style>
 </head>
 <body>
     <div class="main-div">
