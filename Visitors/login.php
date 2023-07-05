@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 include 'connection.php';
 include 'navi.php';
 
@@ -66,36 +64,34 @@ if (mysqli_num_rows($query) > 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login2.css">
-    <style>
-        body{
-            background:#0077b6
-        }
-        .main-div{
-            margin-top:100px
-        }
-        .container{
-
-
-
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
     
 <body>
-    <div class="main-div">
-       <centre> <h2>LOGIN</h2><br><br></centre>
-   
-        <form method="POST">
-            <label>Name<br><input type="text" name="fname"></label><br><br>
-            <label>Password<br><input type="password" name="password"></label><br><br>
-            <a href="recoveryPage.html" class="center">Forgot Password?</a><br><br>
-            <button type="submit" class="sign-in">Login</button><br><hr><br><br><br>
 
-            <p>Don't have an account yet?<a class="w3-btn" href="signup.php">Sign up</a> </p>
-<!-- <div class = "para">Don't have account<button type="submit" class="">Sign up</button> -->
-    </div>
-        </form>
-    </div>
+
+
+
+<form method="POST">
+
+ <h1><center>LOGIN</center></h1><br><br>
+<label>Name<br><input type="text"></label><br><br>
+<label>Password<br><input type="password"></label><br><br>
+<center><a href="recoveryPage.html" class="center">
+    Forgot Password?</a></center><br><center><button type="submit"
+     class="sign-in">Login</button></center><br><hr><br><br>
+
+
+<p>Don't have an account yet?<a class="w3-btn" href="signup.php"> Sign up</a> </p>
+
+</form>
+
+
+    
+
+
 </body>
 </html>
     

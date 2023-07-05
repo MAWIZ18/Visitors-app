@@ -1,3 +1,7 @@
+<?php
+include 'connection.php';
+include 'navi.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

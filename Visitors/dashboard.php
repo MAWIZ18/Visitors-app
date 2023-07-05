@@ -1,8 +1,5 @@
 
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d2d527518d.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="dasboard.css">
@@ -28,15 +28,15 @@ nav{
 }
     </style>
 </head>
+<?php include ('navi.php');?>
 <body>
     <div class="container">
         <nav>
             <ul>
                 <li>
                     <a href="#" class="logo">
-                        <h1>
-                            visitors app
-                        </h1>
+                    
+                        <img src="logo1.png" class="img">
                         <span class="nav-items">
                             admin
                         </span>
