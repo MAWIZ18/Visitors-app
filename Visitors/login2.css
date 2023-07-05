@@ -41,7 +41,15 @@ input{
    
 }
 
-
+.sign-in{
+    color: #fff;;
+    background-color: #023550;
+    width:100px;
+    height: 25px;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    }
 
 
 
@@ -60,5 +68,7 @@ input{
     }
     button{
         margin-top: -3px;
+        background-color: black;
+        
     }
     }
