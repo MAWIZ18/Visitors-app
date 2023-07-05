@@ -142,17 +142,6 @@ nav{
             
         
         </section>
-    </div>
-
-    <div class="courses">
-
-
-    <form method="POST">
-        <input type="text" name ="ide"> <label for="">confirm your id</label>
-        <input type="submit" value="submit">
-    </form>
- 
-
-    </div>
+   
 </body>
 </html>
