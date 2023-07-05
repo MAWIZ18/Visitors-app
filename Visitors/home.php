@@ -44,12 +44,11 @@ initial-scale=1.0">
 
 <div class="nav-link"><a href="#" class="nav-a current-page">Home</a></div>
 <div class="nav-link"><a href="#" class="nav-a">About Us</a></div>
-<div class="nav-link"><a href="#" class="nav-a">Dashboard</a></div>
+<div class="nav-link"><a href="dashboard.php" class="nav-a">Dashboard</a></div>
 
 </div>
 
 </div>
-
 
 
 </nav>
@@ -59,7 +58,7 @@ initial-scale=1.0">
 <h1>Take attendance</h1> 
 
 
-<p class="say"> hello professors , let's help you track who came to class today...
+<p class="say"> Hello professors , let's help you track who came to class today...
 </p>
 
 <div class="sep">
