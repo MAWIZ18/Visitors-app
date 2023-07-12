@@ -17,19 +17,20 @@ nav{
     height: 100vh;
     left: 0;
     width: 90px;
-    /* width: 280px; */
-    background:#fff;
+     width: 280px;
+    background:#023550;
     overflow: hidden;
     transition: 1s;
     
 }
+
 nav ul li a{
-    color: black;
+    color: white;
 }
-nav:hover{
+/* nav:hover{
     width: 280px;
     transition: 1s;
-}
+} */
 .logo{
     text-align: center;
     display: flex;
@@ -37,15 +38,18 @@ nav:hover{
     padding-bottom: 3rem
 }
 .logo span{
+    position: relative;
+    top: 78px;
+    left: -100px;
     font-weight: bold;
     padding-left: 15px;
     font-size: 18px;
     text-transform: uppercase;
 }
 .logo img{
-    width:45px;
-    height: 45px;
-    border-radius: 50%;
+    width:100px;
+    height: 90px;
+    
 }
 
 a{
@@ -66,16 +70,17 @@ nav .fas{
 }
 .nav-item{
     position: relative;
-    top: 12px;
+    top: 9px;
     margin-left: 10px;
 }
 
 a:hover{
    background: #eee;
    transition: 0,5s;
+   color: #023550;
 }
 a:hover i{
-    color: #34af6d;
+    color: #023550;
 }
 .logout{
     position:relative;
@@ -102,25 +107,16 @@ a:hover i{
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
-    justify-content: space-between;
-    
    }
 
-   .main-top form{
-    margin-right: 0px;
-   }
-   .main-top h1{
-    margin-right: 50px;
-   }
-
-   /* .main-top i{
+   .main-top i{
     position: absolute;
 
     right: 0;
     margin: 10px 30px;
     color: rgb(110, 109, 109);
     cursor: pointer;
-   } */
+   }
 
    /* .attendance-table{
     margin-top: 50px;
@@ -183,7 +179,7 @@ a:hover i{
  table thead tr{
 
     color:#fff;
-    background: #34af6d;
+    background: #023550;
     text-align: left;
     font-weight: bold;
    
@@ -205,9 +201,9 @@ a:hover i{
 
  .table tbody tr .active{
 font-weight: bold ;
-color: #4ad489;
+color: #023550;
  }
 
  .table tbody tr:last-of-type{
-border-bottom: 2px solid #4ad489;
+border-bottom: 2px solid #023550;
  }

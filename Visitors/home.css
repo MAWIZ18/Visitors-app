@@ -7,104 +7,103 @@ caf0f8 dim orange
 
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .image{
-    width:100px;
-    height: 90px;
+  width:100px;
+  height: 90px;
 }
 
 body{
-    background: #023550;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-    position: relative;    
+  background: #023550;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;    
 }
 
 .navbar-1 {
-    background: #caf0f8;
-    
+  background: #caf0f8;
+  
 }
-  
-  .nav-1{
-    display: flex;
-    justify-content: space-between; 
-    margin: 0 auto;
-    width: 95%;
-    max-width: 1450px;
-  }  
-  .menu{
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%;
-    align-items: center;
+
+.nav-1{
+  display: flex;
+  justify-content: space-between; 
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1450px;
+}  
+.menu{
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  align-items: center;
+ 
+}
+
+.nav-a{
+  text-decoration: none;
+  color: #333;
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: uppercase;
    
+}
+
+.current-page{
+  border-bottom: 2px solid #535252;
+  font-weight: 600;
   }
   
-  .nav-a{
-    text-decoration: none;
-    color: #333;
-    font-size: 19px;
-    font-weight: 500;
-    text-transform: uppercase;
-     
-  }
-  
-  .current-page{
-    border-bottom: 2px solid #535252;
-    font-weight: 600;
-    }
-    
 
 
 
 .second-first-div{
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  
 }
 h1{
-    font-size: 60px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: .4em;
-    color: whitesmoke;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  color: whitesmoke;
 }
 
 .say{
-    text-transform: uppercase;
-    font-size: 22px;
-    color: whitesmoke;
-    margin-bottom: 1em;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: whitesmoke;
+  margin-bottom: 1em;
 }
 .su{
-    color: #1b1b1b;
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: none;
-    text-transform: uppercase;
-   
+  color: #1b1b1b;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+ 
 }
 
- button{
-    height: 40px;
-    width: 150px;
-    margin-right: 25px;
-    background-color: #caf0f8;
-    border: none;
-    border-radius: 30px;
-    transition: all .6s linear;
-    color: #fff;
+button{
+  height: 40px;
+  width: 150px;
+  margin-right: 25px;
+  background-color: #caf0f8;
+  border: none;
+  border-radius: 30px;
+  transition: all .6s linear;
 }
 
 button:hover{
@@ -117,43 +116,41 @@ border: 1px solid whitesmoke;
 
 
 @media (max-width: 768px) {
-    .second-first-div{
-        position: absolute;
-        top: 50%;
-        left: 55%;
-        transform: translate(-50%, -50%);
-        width: 95%;
-        margin: 0 auto;
-        
-    }   
-    .navbar-1 {
-        background: #caf0f8;
-        
-    }
-    .image{
-       margin: 0 auto;
-    }
+  .second-first-div{
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      width: 95%;
+      margin: 0 auto;
       
-      .nav-1{
-       display: flex;
-       flex-direction: column;
-       
-       
-      }  
-      .menu{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-       
-      }
-      .nav-link{
-      margin-bottom: 1em;
+  }   
+  .navbar-1 {
+      background: #caf0f8;
+      
+  }
+  .image{
+     margin: 0 auto;
+  }
+    
+    .nav-1{
+     display: flex;
+     flex-direction: column;
+     
+     
+    }  
+    .menu{
       display: flex;
-         
-      }
-      button{
-        margin-top: 4em;
-      }
-      
+      flex-direction: column;
+      margin: 0 auto;
+     
+    }
+    .nav-link{
+    margin-bottom: 1em;
+    display: flex;
+       
+    }
+    button{
+      margin-top: 4em;
+    }
 }
-

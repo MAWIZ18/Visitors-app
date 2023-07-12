@@ -1,0 +1,187 @@
+
+body{
+   
+    max-width: 1920px;
+    
+    font-family: sans-serif,poppins;
+    background-color: #023550;;
+  }
+.categories{
+    display: flex;
+    justify-content: space-around;
+}
+.categories .lunch{
+    background-color: white;
+    border-radius: 20px;
+    height: 100px;
+    width: 90px;
+    text-align: center;
+}
+.categories .lunch img{
+    margin-left: 5px ;
+    margin-top: 10px;
+}
+.categories .lunch p{
+    margin-top: -5px;
+    font-weight: bold;
+}
+ 
+.categories .breakfast{
+    background-color: white;
+    border-radius: 20px;
+    height: 100px;
+    width: 90px;
+    text-align: center;
+}
+.categories .breakfast img{
+    margin-left: 15px ;
+    margin-top: 10px;
+}
+.categories .breakfast p{
+    margin-top: -5px;
+    font-weight: bold;
+}
+.categories .diner{
+    background-color: white;
+    border-radius: 20px;
+    height: 100px;
+    width: 90px;
+    text-align: center;
+}
+.categories .diner img{
+    margin-left: 15px ;
+    margin-top: 10px;  
+}
+.categories .diner p{
+    margin-top: -5px;
+    font-weight: bold; 
+}
+.categories .dessert{
+    background-color: white;
+    border-radius: 20px;
+    height: 100px;
+    width: 90px;
+    text-align: center;
+}
+.categories .dessert p{
+    margin-top: -1px;
+    font-weight: bold; 
+}
+.parent{
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+    justify-content: center;
+    padding-bottom: 25px;
+    width: 100%;
+    height: 100%;
+
+}
+
+/*=======the food grid=====*/
+.container{
+    display: grid;
+    grid-template-columns:repeat(4,200px
+    ) ;
+    grid-auto-rows: 300px;
+    grid-row-gap:30px;
+    grid-column-gap:30px ;
+    grid-template-areas: "header header header header";
+    justify-content: center;
+    align-content: center;
+    
+}
+.food{
+   background-color: #ffff;
+   border-radius: 20px;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-left: 20px;
+   padding-right: 20px;
+   color: #424b54;
+}
+
+.food h4{
+    margin-bottom: -5px;
+    
+}
+.introduction{
+    grid-area: header;
+    padding: 20px 20px 20px 20px;
+}
+.food-item{
+    background-color:#caf0f8;
+    height: 100px;
+    width: 100px;
+    border-radius: 300px;
+
+}
+
+/*======the button design======*/
+ input{
+    padding-left: 10px 60px;
+    background: #023550;
+    color: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 14pt;
+    /* font-weight: 500; */
+    border-radius: 6px;
+    width: 100px;
+    height:30px ;
+    margin-top: 30px;
+  }
+  input:hover{
+    background-color: #caf0f8;
+    cursor: pointer;
+    color: #fff;
+    transform: translateX(-12px) ;
+    transition: 0.4s ease;
+  }
+  h1{
+
+    color: #fff;
+  }
+
+  /******NAVIGATION CSS*****/
+.navbar-1 {
+    background: #caf0f8;
+    position: sticky;
+    }
+    
+    
+    .nav-1{
+    display: flex;
+    justify-content: space-between; 
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1450px;
+    }  
+    .menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+    
+    }
+    
+    .nav-a{
+    text-decoration: none;
+    color: #333;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+    }
+    
+    .current-page{
+    border-bottom: 2px solid #535252;
+    font-weight: 600;
+    }
+    
+    /******NAVIGATION CSS*****/

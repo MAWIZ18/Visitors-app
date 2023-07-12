@@ -1,5 +1,11 @@
 
 
+
+
+<?php  session_start();
+
+include 'connection.php';
+$users= $_GET['users']; $cou= $_GET['course'];?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +13,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d2d527518d.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="dasboard.css">
@@ -18,7 +21,7 @@
  table thead tr{
 
 color:#fff;
-background: #0077b6;
+background: #023550;
 text-align: left;
 font-weight: bold;
 
@@ -28,17 +31,20 @@ nav{
 }
     </style>
 </head>
-<?php include ('navi.php');?>
 <body>
+    
     <div class="container">
         <nav>
             <ul>
                 <li>
-                    <a href="#" class="logo">
-                    
-                        <img src="logo1.png" class="img">
+                    <a href="home.php" class="logo">
+                        
+                            <img src="logo1.png" alt="" width="80px" height="80px">
+                         
+                        <br>
+                        <br>
                         <span class="nav-items">
-                            admin
+                           <?php echo "$users" ; ?>
                         </span>
                     </a>
                 </li>
@@ -66,25 +72,20 @@ nav{
                 </li>
 
                 <li>
-                    <a href="#">
-                        <i class="fas fa-cog"></i>
-                        <span class="nav-item">Setings</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="logout">
-                        <i class="fas sing-out-alt"></i>
+                    <a href="logout.php">
+                        <i class="fa-solid fa-right-from-bracket"></i>
                         <span class="nav-item">log out</span>
                     </a>
                 </li>
+
+              
 
             </ul>
         </nav>
         <section class="main">
             <div class="main-top">
                 <h1>Attendance</h1>
-                <div class="forme"><a href="registrationForm.php"> generate an attendance</a></div>
+                <div class="forme"><a href="randomCode.php"> generate an attendance</a></div>
             </div>
             <section class="attendance">
                 <div class="attendance-list">
@@ -103,9 +104,8 @@ nav{
                                 <tbody>
                                     
                                 <?php
-                                session_start();
-                include 'connection.php';
-                $users= $_GET['users']; $cou= $_GET['course'];
+                               
+              
                 $sql ="select * from `students_data` where lecturer_name = '$users'";
                
                 $query= mysqli_query ($connect,$sql);
@@ -142,6 +142,17 @@ nav{
             
         
         </section>
-   
+    </div>
+
+    <div class="courses">
+
+
+    <form method="POST">
+        <input type="text" name ="ide"> <label for="">confirm your id</label>
+        <input type="submit" value="submit">
+    </form>
+ 
+
+    </div>
 </body>
 </html>

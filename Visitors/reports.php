@@ -16,11 +16,9 @@
                 <li>
                     <a href="#" class="logo">
                         <h1>
-                            visitors app
+                            reports
                         </h1>
-                        <span class="nav-items">
-                            admin
-                        </span>
+                        
                     </a>
                 </li>
               
@@ -81,7 +79,7 @@
             </div>
             <section class="attendance">
                 <div class="attendance-list">
-                    <h1>Attendance-list</h1>
+                    <h1>Reports</h1>
                     <table class="table">
                         <div class="attendance-table">
                             <table >

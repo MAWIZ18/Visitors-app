@@ -2,7 +2,7 @@
 session_start();
 
 include 'connection.php';
-// include 'navi.php';
+include 'navi.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve form data
@@ -37,7 +37,7 @@ if (mysqli_num_rows($query) > 0) {
        $var= $row['courseName'];
       
      
-      echo  '<div style="height:50px;width: 500px; background-color: #023550; color: white; border-bottom: white solid 20px; display: flex;align-items: center; justify-content: center;"> <a href="dashboard.php?users='.$fname.' & course='.$var. '" style="color: white; text-decoration: none; font-size: 20px;">' . $row['courseName']. '</a> </div>';
+      echo  '<div> <a href="dashboard.php?users='.$fname.' & course='.$var. '">' . $row['courseName']. '</a> </div>';
     }
             
            
@@ -61,43 +61,16 @@ if (mysqli_num_rows($query) > 0) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login2.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
 </head>
     
 <body>
-
-<header>
-<nav class="navbar-1">
-
-<div class="nav-1">
-<div class="image">
-
-<img src="logo1.png" alt="logo" height="80px" length="80px" class="left">
-
-</div>
-
-<div class="menu">
-
-<div class="nav-link"><a href="home.php" class="nav-a current-page">Home</a></div>
-
-<div class="nav-link"><a href="#" class="nav-a">About Us</a></div>
-
-</div>
-</div>
-</div>
-
-
-
-</nav>
-</header>
-    <!-- <div class="main-div">
+    <div class="main-div">
        <centre> <h2>LOGIN</h2><br><br></centre>
    
         <form method="POST">
@@ -107,25 +80,10 @@ if (mysqli_num_rows($query) > 0) {
             <button type="submit" class="sign-in">Login</button><br><hr><br><br><br>
 
             <p>Don't have an account yet?<a class="w3-btn" href="signup.php">Sign up</a> </p>
- <div class = "para">Don't have account<button type="submit" class="">Sign up</button> -->
-    <!-- </div>
+<!-- <div class = "para">Don't have account<button type="submit" class="">Sign up</button> -->
+    </div>
         </form>
-    </div> --> 
-    <form method="POST">
-
- <h1><center>LOGIN</center></h1><br><br>
-<label>Name<br><input type="text" name="fname"></label><br><br>
-<label>Password<br><input type="password" name="password"></label><br><br>
-<center><a href="recoveryPage.html" class="center">
-    Forgot Password?</a></center><br><center><button type="submit"
-     class="sign-in">Login</button></center><br><hr><br><br>
-
-
-<p>Don't have an account yet?<a class="w3-btn" href="signup.php"> Sign up</a> </p>
-
-</form>
-
-
+    </div>
 </body>
 </html>
     
