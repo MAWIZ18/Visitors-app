@@ -126,8 +126,17 @@ input{
     border-radius: 5px;
     margin-bottom: 20px;
     text-align: center;
+
    
-   
+}
+.sign-up{
+    color: #fff;;
+    background-color: #023550;
+    width:100px;
+    height: 25px;
+    border:none;
+    outline:none;
+    border-radius:5px;
 }
 .bg{
     color: red;
