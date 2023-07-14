@@ -160,7 +160,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 <center><button type="submit" class="sign-in" onclick="openPopup()" class="ok">Sign Up</button><br><br><p class="first-p">Already have,
-<center><button type="submit" class="sign-up">SignUp</button><br><br><p class="first-p">Already have,
+
     an account. <a href="login.php">Login</a>
 </p></center>
 </form>

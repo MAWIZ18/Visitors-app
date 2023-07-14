@@ -37,7 +37,7 @@ if (mysqli_num_rows($query) > 0) {
        $var= $row['courseName'];
       
      
-      echo  '<div> <a href="dashboard.php?users='.$fname.' & course='.$var. '">' . $row['courseName']. '</a> </div>';
+      echo  '<div style="height:50px;width: 500px; background-color: #023550; color: white; border-bottom: white solid 20px; display: flex;align-items: center; justify-items: center;"> <a style="color: white; text-decoration: none; font-size: 20px;" href="dashboard.php?users='.$fname.' & course='.$var. '">' . $row['courseName']. '</a> </div>';
     }
             
            
